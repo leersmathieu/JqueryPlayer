@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BQ Lecteur Vidéo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    
+</head>
+<body>
+    
+    <div id="player">
+        <video width="800" type="video/mp4" id="video">
+            <source id="srcVideo" src="video/selfie2.mp4" type="video/mp4" />
+        </video>
+        <div id="controls">
+            <img src="img/fullscreen.png" id="fullscreen" alt="<>" />
+            <img src="img/play.png" id="play" alt=">" />
+            <img src="img/pause.png" id="pause" alt"||" />
+            <img src="img/stop.png" id="stop" alt="S" />
+            <img src="img/large.png" id="largescreen" alt="[]">
+            
+            <img src="img/volume.png" id="btn_volume" alt="V" />
+            <div id="volume"></div>
+            <div id="time"></div>
+        </div>  
+    </div>
+    <div class="switch_video">
+        <button id="previous"> previous </button>
+        <button id="next"> next </button>
+    </div>
+    
+    
+</body>
+<script src="player.js"></script>
+</html>
